@@ -28,11 +28,19 @@ def animate():
     for c in itertools.cycle(['|', '/', '-', '\\']):
         if done:
             break
-        sys.stdout.write('\rloading ' + c)
+        sys.stdout.write('\rЗагрузка ' + c)
         sys.stdout.flush()
         time.sleep(0.1)
     
- 
+#Аним.1
+os.system ('toilet Install.')
+time.sleep(2.0)
+os.system ('toilet Install..')
+time.sleep(2.0)
+os.system ('toilet Install...')
+time.sleep(2.0)
+
+
 t = threading.Thread(target=animate)
 t.start()
  
@@ -46,17 +54,15 @@ print(Fore.BLUE +Back.WHITE + 'Предстовляет: AllUtils')
 print(Fore.RED + 'Выбери утилиту --> ')
 print(Fore.YELLOW+"""
 <-- Соц. Инжинерия -->
-[1] - Deanons
+[1] - Deanons (Проверка инфы)
 <-- Утилиты для вк -->
-[2] - Brute 
+[2] - Brute (Брут логина)
 [3] - kingfish (Временно не работает)
 <-- Hack'eram -->
-[4] - spymer
-[5] - DoS
+[4] - spymer (Смс спамер)
+[5] - DoS (Нагрузка на сайт)
 [6] - http тунель (ngrok)
 """)
- 
-os.chdir('utils')
  
 while True:
     num =str(input("\033[35m\033[5m[*]"))
@@ -91,4 +97,3 @@ while True:
         os.system('sh 7.sh')
 
         
- 
