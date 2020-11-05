@@ -39,13 +39,10 @@ t.start()
 #long process here
 time.sleep(0.8)
 done = True
-""")
 
-while True:
-    os.system ('clear')
-	print(Fore.BLUE +Back.WHITE + 'Предстовляет: AllUtils')
-	print(Fore.RED + 'Выбери утилиту --> ')
-	print(Fore.YELLOW + """
+print(Fore.BLUE +Back.WHITE + 'Предстовляет: AllUtils')
+print(Fore.RED + 'Выбери утилиту --> ')
+print(Fore.YELLOW + """
 
  | ["] Соц. Инжинерия ["]  				  
  | [1] - Deanons (Проверка инфы)
@@ -61,13 +58,17 @@ while True:
  | [8] - Vk-HACK × И так все понятно ×
  | [9] - OS-Termux ×В разработке×
  | [07] - Описания """)
-	print(Fore.RED +
+print(Fore.RED +
  """║║ ╔═ ╔═ ╔╗ ║║ """ + Fore.GREEN +
 """ ╚╣ ╠═ ╠╗ ╠╣ ╠╣ """ + Fore.BLUE +
  """═╝ ╚═ ╚╝ ║║ ║║
  """)
-	print(Fore.BLUE + """
+print(Fore.BLUE + """
 × Го 200 сабов в группе ? ×""")
+
+while True:
+    os.system ('clear')
+
     num =str(input("\033[35m\033[5m[*]"))
     if num == ('1') :
         print (Fore.GREEN + 'Запуск Info.com')
