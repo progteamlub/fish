@@ -39,7 +39,6 @@ t.start()
 #long process here
 time.sleep(0.8)
 done = True
-PT-Lub? ×
 """)
 
 while True:
